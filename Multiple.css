@@ -1,0 +1,166 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	background: url("stacked-waves-haikei.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+    padding: 5%;
+}
+
+.qr-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    margin: 20px;
+}
+
+.qr-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #333;
+}
+
+.user-input {
+    margin-bottom: 30px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+}
+
+.qr-input {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+    background-color: #fff;
+}
+
+.remove-btn {
+    background-color: #ff4c4c;
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 0 8px 8px 0;
+    transition: background-color 0.3s;
+}
+
+.remove-btn:hover {
+    background-color: #e03b3b;
+}
+
+.input-group-number {
+    padding: 12px;
+    font-size: 16px;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.qr-button {
+    background-color: #007bff;
+    color: white;
+    padding: 14px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    flex: 1;
+    transition: background-color 0.3s;
+}
+
+.qr-button:hover {
+    background-color: #0056b3;
+}
+
+.qr-codes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.qr-code {
+    text-align: center;
+    width: 220px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.qr-code img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.download-link {
+    display: block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.download-link:hover {
+    color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    .user-input {
+        margin-bottom: 20px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .qr-button, .remove-btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .qr-codes-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .qr-code {
+        width: 100%;
+        max-width: 250px;
+    }
+}
